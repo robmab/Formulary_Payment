@@ -17,7 +17,7 @@
   
         <div class="top" >
           <h3 class="card-title">Payment form example</h3>    
-        </div>     
+        </div>  
           <!-- FORM -->
         <form action=""> 
           <div class="mid">
@@ -33,17 +33,17 @@
             <!-- 1 ROW -->
             <div class="row">
               <div class="col-12 col-lg-5">
-                <label class="form-label" for="tel">Card #</label>
-                <input required class="form-control" pattern="[0-9\s]{13,19}" inputmode="numeric" type="tel" maxlength="19"  placeholder="XXXXXXXXXXXXXXXX">
+                <label class="form-label" for="card">Card #</label>
+                <input id="card" required class="form-control" pattern="[0-9\s]{13,19}" inputmode="numeric" type="tel" maxlength="19"  placeholder="XXXXXXXXXXXXXXXX">
               </div>
               <div class="col-6 col-lg-3">
-                <label class="form-label" for="tel">CVC #</label>
-                <input required class="form-control" pattern="[0-9\s]{3,4}" inputmode="numeric" type="tel" maxlength="4" placeholder="0000"  max="999">
+                <label class="form-label" for="cvc">CVC #</label>
+                <input id="cvc" required class="form-control" pattern="[0-9\s]{3,4}" inputmode="numeric" type="tel" maxlength="4" placeholder="0000"  max="999">
               </div>
               <div class="col-6 col-lg-4">
-                <label class="form-label" for="number">Amount</label>
+                <label class="form-label" for="amount">Amount</label>
                 <div class="d-flex">
-                  <p class="fs-6"><strong>$</strong></p><input required class="form-control" type="number" placeholder="Amount">
+                  <p class="fs-6"><strong>$</strong></p><input id="amount" required class="form-control" type="number" placeholder="Amount">
                 </div>
                 
               </div>
@@ -52,24 +52,24 @@
             <!-- 2 ROW -->
             <div class="row">
               <div class="col-12 col-lg-6">
-                <label class="form-label" for="text">First Name</label>
-                <input required class="form-control" type="text">
+                <label class="form-label" for="fn">First Name</label>
+                <input id="fn" required class="form-control" type="text">
               </div>
               <div class="col-12 col-lg-6">
-                <label class="form-label" for="text">Last Name</label>
-                <input required class="form-control" type="text">
+                <label class="form-label" for="ln">Last Name</label>
+                <input id="ln" required class="form-control" type="text">
               </div>
             </div>
             <!-- 2 ROW END-->
             <!-- 3 ROW -->
             <div class="row">
               <div class="col-12 col-lg-6">
-                <label class="form-label" for="text">City</label>
-                <input required class="form-control" type="text">
+                <label class="form-label" for="city">City</label>
+                <input id="city" required class="form-control" type="text">
               </div>
               <div class="col-6 col-lg-3">
-                <label class="form-label" for="select">State</label>
-                <select style="" required class="form-select" name="" id="" >
+                <label class="form-label" >State</label>
+                <select style="" required class="form-select" name="" id="state" >
                   <option value="" disabled selected hidden>Pick a state</option>
                   <option value="Angola">Angola</option>
                   <option value="Belgium">Belgium</option>
@@ -80,8 +80,8 @@
                 </select>
               </div>
               <div class="col-6 col-lg-3">
-                <label class="form-label" for="tel">Postal Code</label>
-                <input required class="form-control" pattern="[0-9\s]{5}" inputmode="numeric" type="tel" maxlength="5">
+                <label class="form-label" for="pc">Postal Code</label>
+                <input id="pc" required class="form-control" pattern="[0-9\s]{5}" inputmode="numeric" type="tel" maxlength="5">
               </div>
             </div>
             <!-- 3 ROW END-->
@@ -103,8 +103,8 @@
                    
               </div>
               <div class="col-lg-6">
-                <label class="form-label" for="">Message</label>
-                <textarea class="form-control" rows="3"></textarea>
+                <label class="form-label" for="message">Message</label>
+                <textarea id="message" class="form-control" rows="3"></textarea>
                 <div id="passwordHelpBlock" class="form-text mb-4" >
                   Add any notes here.
                 </div>
