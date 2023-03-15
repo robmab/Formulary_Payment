@@ -20,7 +20,7 @@
         </div>  
           <!-- FORM -->
         <form action=""> 
-          <div class="mid">
+          <div class="mid p">
             <!-- ALERT -->
             <div class="row">
               <div class="col-12">
@@ -34,16 +34,16 @@
             <div class="row">
               <div class="col-12 col-lg-5">
                 <label class="form-label" for="card">Card #</label>
-                <input id="card" required class="form-control" pattern="[0-9\s]{13,19}" inputmode="numeric" type="tel" maxlength="19"  placeholder="XXXXXXXXXXXXXXXX">
+                <input id="card" required class="form-control"  type="number" min="1000000000000000" max="9999999999999999"  placeholder="XXXXXXXXXXXXXXXX">
               </div>
               <div class="col-6 col-lg-3">
                 <label class="form-label" for="cvc">CVC #</label>
-                <input id="cvc" required class="form-control" pattern="[0-9\s]{3,4}" inputmode="numeric" type="tel" maxlength="4" placeholder="0000"  max="999">
+                <input id="cvc" required class="form-control" type="number" min="1000" max="9999" placeholder="0000"  max="999">
               </div>
               <div class="col-6 col-lg-4">
                 <label class="form-label" for="amount">Amount</label>
                 <div class="d-flex">
-                  <p class="fs-6"><strong>$</strong></p><input id="amount" required class="form-control" type="number" placeholder="Amount">
+                  <p class="fs-6"><strong>$</strong></p><input id="amount" required class="form-control" type="number" max="" placeholder="Amount">
                 </div>
                 
               </div>
